@@ -22,7 +22,7 @@ if __name__ == '__main__':
                                              detach=True,
                                              environment = ["worker_name=cherryDK_"+str(i),"C_FORCE_ROOT=true"],
                                              name = "cherryDK_No_Limit_"+str(i))
-        print oneContainer.logs()
+#         print oneContainer.logs()
 
     containerList = client.containers.list(all=True)
     print containerList
